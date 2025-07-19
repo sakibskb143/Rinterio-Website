@@ -6,16 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
 
-    <!-- Google Fonts: Manrope -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/0cd1eac34e.js" crossorigin="anonymous"></script>
-
-    <!-- Tailwind CSS with DaisyUI -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -24,26 +17,122 @@
                         'manrope': ['Manrope', 'sans-serif'],
                     },
                     colors: {
-                        clifford: '#da373d',
+                        'bg-header-1': '#ffffff00',
+                        'bg-header-2': '#FFFFFF',
+                        'primary-color': '#212121',
+                        'secondary-color': '#1C1C1C',
+                        'para-color': '#737373',
+                        'btn-bg': '#ABEF5F',
                     }
                 }
             }
+
         };
     </script>
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Google Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0cd1eac34e.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
 
     <!-- Custom Styles -->
     <style>
-        
+
     </style>
 </head>
 
 
 <body class="font-manrope">
     <!-- header starts -->
-    <header>
-        
+    <header class="md:container mx-auto px-4 ">
+        <!-- navber -->
+        <nav>
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="py-2 px-3 rounded-full bg-btn-bg mr-2">
+                        <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                    </div>
+                    <a class="text-primary-color text-2xl font-extrabold lg:text-3xl">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">ContactUs</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-4">
+                    <div class="hidden md:flex items-center rounded-full border-gray-400 bg-orange-300 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-8 text-para-color">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+
+                    </div>
+                    <div class="hidden md:flex items-center rounded-full  border-gray-400 bg-orange-300 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" class="size-8 text-para-color">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                        </svg>
+
+                    </div>
+                    <div class="hidden md:flex btn bg-btn-bg rounded-3xl px-5 py-3 items-center ">
+                        <a href="#" class="text-secondary-color text-xl mr-2">Book Consult</a>
+                        <i class="fa-solid fa-arrow-right -rotate-45 p-1 bg-black text-white rounded-full"></i>
+                    </div>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">ContactUs</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="card  gap-4 md:gap-6 ">
+                <figure class="">
+                    <img src="./assets/banner.png" alt="Shoes"
+                        class="w-8/12" />
+                </figure>
+                <div class="card-body items-center text-center md:w-10/12 space-y-4 md:space-y-6 mx-auto ">
+                    <h2 class="card-title text-2xl md:text-4xl lg:text-6xl font-extrabold text-primary-color ">A barn house of this design has a striking appearance</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <div class="flex w-full md:w-auto btn bg-[#ABEF5F80] rounded-3xl px-5 py-3 items-center border-2 border-btn-bg ">
+                        <a href="#" class="text-secondary-color text-xl mr-2">Book Consult</a>
+                        <i class="fa-solid fa-arrow-right -rotate-45 p-1 bg-black text-white rounded-full"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
     <!-- header ends -->
 
