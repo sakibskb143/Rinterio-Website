@@ -53,9 +53,9 @@
 
 <body class="font-manrope">
     <!-- header starts -->
-    <header class="md:container mx-auto px-4 ">
+    <header class="md:container mx-auto px-4 bg-[linear-gradient(0deg,_rgb(255,255,255),_rgba(255,255,255,0)_100%)]">
         <!-- navber -->
-        <nav>
+        <nav class="bg-[linear-gradient(0deg,_rgb(255,255,255),_rgba(255,255,255,0)_100%)]">
             <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
                     <div class="py-2 px-3 rounded-full bg-btn-bg mr-2">
@@ -73,7 +73,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end gap-4">
-                    <div class="hidden md:flex items-center rounded-full border-gray-400 bg-orange-300 p-2">
+                    <div class="hidden md:flex items-center rounded-full border-gray-400 bg-gray-100 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-8 text-para-color">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -81,7 +81,7 @@
                         </svg>
 
                     </div>
-                    <div class="hidden md:flex items-center rounded-full  border-gray-400 bg-orange-300 p-2">
+                    <div class="hidden md:flex items-center rounded-full  border-gray-400 bg-gray-100 p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="size-8 text-para-color">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -119,13 +119,16 @@
         <section>
             <div class="card  gap-4 md:gap-6 ">
                 <figure class="">
-                    <img src="./assets/banner.png" alt="Shoes"
-                        class="w-8/12" />
+                    <img src="./assets/banner.png" alt="Shoes" class="w-8/12" />
                 </figure>
                 <div class="card-body items-center text-center md:w-10/12 space-y-4 md:space-y-6 mx-auto ">
-                    <h2 class="card-title text-2xl md:text-4xl lg:text-6xl font-extrabold text-primary-color ">A barn house of this design has a striking appearance</h2>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                    <div class="flex w-full md:w-auto btn bg-[#ABEF5F80] rounded-3xl px-5 py-3 items-center border-2 border-btn-bg ">
+                    <h2 class="card-title text-2xl md:text-4xl lg:text-6xl font-extrabold text-primary-color ">A barn
+                        house of this design has a striking appearance</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <div
+                        class="flex w-full md:w-auto btn bg-[#ABEF5F80] rounded-3xl px-5 py-3 items-center border-2 border-btn-bg ">
                         <a href="#" class="text-secondary-color text-xl mr-2">Book Consult</a>
                         <i class="fa-solid fa-arrow-right -rotate-45 p-1 bg-black text-white rounded-full"></i>
                     </div>
@@ -137,7 +140,53 @@
     <!-- header ends -->
 
     <!-- main starts -->
-    <main>
+    <main class="bg-[#F4F4F4] py-12">
+        <!-- design section -->
+        <section
+            class="md:container mx-auto px-4 my-6 lg:my-6 flex flex-col lg:flex-row  justify-between gap-6 lg:items-stretch ">
+            <div class="flex-1 space-y-6 relative">
+                <div class="absolute -top-10 -left-10 hidden lg:flex">
+                    <img src="./assets/Vector.png" alt="">
+                </div>
+                <div class="bg-white flex space-x-2 p-2 w-32 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                    <a href="#">About Us</a>
+                </div>
+                <h1 class="font-bold text-2xl lg:text-4xl text-primary-color">We design thoughtful,<br> liveable spaces
+                </h1>
+                <p class="text-para-color md:w-10/12">The barn house captivates with its blend of rustic charm and
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div class="flex flex-row items-center space-x-6 bg-white p-6 rounded-xl">
+                    <div>
+                        <img src="./assets/commercial.png" alt="">
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl text-para-color font-extrabold">Commercial</h3>
+                        <p class="text-base text-para-color font-medium">The barn house captivates with its blend <br>of
+                            rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center space-x-6 bg-white p-6 rounded-xl">
+                    <div>
+                        <img src="./assets/commercial.png" alt="">
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-xl text-para-color font-extrabold">Commercial</h3>
+                        <p class="text-base text-para-color font-medium">The barn house captivates with its blend <br>of
+                            rustic charm and modern.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 h-auto ">
+                <img src="./assets/Rectangle.png" alt="" class="w-full object-cover rounded-xl">
+            </div>
+
+        </section>
+
 
     </main>
     <!-- main ends -->
